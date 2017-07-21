@@ -51,7 +51,7 @@ const checkHistory = function(theMsg){
 const sendMsg = function(msg, match){
     var text = msg.text.toLowerCase();
     var msgToSend = "VAI TOMAR NO C$ SEU IMITÃO!!";
-    if(text.match(/(parceiro|passero|passeiru)/)){
+    if(text.match(/(parceiro|passero|passeiru|parsseiru)/)){
         bot.sendMessage( msg.chat.id, msgToSend);
     }else if(!text.match(/\/start/)){
         msgToSend = checkHistory(randomMsg());
