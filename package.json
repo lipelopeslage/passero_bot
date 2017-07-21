@@ -1,0 +1,27 @@
+{
+  "name": "node-telegram-bot-api",
+  "version": "0.27.1",
+  "description": "Telegram Bot API",
+  "main": "./index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "keywords": [
+    "telegram",
+    "telegram bot",
+    "telegram bot api",
+    "bot"
+  ],
+  "scripts": {
+  },
+  "author": "Yago Pérez <yagoperezs@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.12"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
