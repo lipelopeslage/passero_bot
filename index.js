@@ -6,6 +6,10 @@ const TOKEN = `435445254:AAF6Bx8AEQzPEmAvmzB-gXeIMK7T-zTWAqI`
 
 const bot = new TelegramBot( TOKEN, { polling: true } )
 
+const timeout = 0;
+
+const TIME = 1800000;
+
 const msgs = [
     "desce ai meu parceiro!!",
     "desce ai meu passeiru!!",
@@ -59,8 +63,14 @@ const sendMsg = function(msg, match){
     }
 }
 
+const autoMsg = function(){
+    clearTimeout(timeout);
+    bot.sendMessage( msg.chat.id, checkHistory(randomMsg()));
+    timeout = setTimeout(autoMsg, TIME);
+}
 
 bot.onText( /(^\/start|.*)/, sendMsg);
+timeout = setTimeout(autoMsg, TIME);
 console.log('rodando bot...')
 
 http.createServer(function(){}).listen(process.env.PORT || 6000)
