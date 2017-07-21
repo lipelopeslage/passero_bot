@@ -1,12 +1,8 @@
 {
   "name": "node-telegram-bot-api",
-  "version": "0.27.1",
+  "version": "7.0.0",
   "description": "Telegram Bot API",
   "main": "./index.js",
-  "directories": {
-    "example": "examples",
-    "test": "test"
-  },
   "keywords": [
     "telegram",
     "telegram bot",
@@ -14,14 +10,20 @@
     "bot"
   ],
   "scripts": {
+    "start": "node index.js"
   },
-  "author": "Yago Pérez <yagoperezs@gmail.com>",
+  "author": "Felipe Lopes Lage <felipelopeslage@gmail.com>",
   "license": "MIT",
   "engines": {
     "node": ">=0.12"
   },
   "dependencies": {
+    "node-telegram-bot-api": "*"
   },
-  "devDependencies": {
+  "devDependencies": {    
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lipelopeslage/passero_bot.git"
   }
 }
