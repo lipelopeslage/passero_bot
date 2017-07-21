@@ -6,7 +6,7 @@ const TOKEN = `435445254:AAF6Bx8AEQzPEmAvmzB-gXeIMK7T-zTWAqI`
 
 const bot = new TelegramBot( TOKEN, { polling: true } )
 
-const timeout = 0;
+var timeout = 0;
 
 const TIME = 1800000;
 
